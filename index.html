@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buon compleanno!</title>
+    <link rel="icon" href="models/heart_pixel.png">
+
+    <script type="importmap">
+		{
+			"imports": {
+			"three": "https://unpkg.com/three/build/three.module.js",
+			"three/addons/": "https://unpkg.com/three/examples/jsm/"
+		  }
+		}
+	</script>
+    <script src="artoolkit.min.js"></script>
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <div id="app" class="hidden">
+        <video autoplay muted id="myvideo"></video>
+        <canvas id="mycanvas"></canvas>
+    </div>
+    <div id="welcome" class="cover_all">
+        <p class="title">Tanti auguri!</p>
+        <p class="date">「 4 Ottobre 2024 」</p>
+        <button id="start_button" class="button">ʚ♡ɞ</button>
+    </div>
+    <a-marker type="pattern" url="markers\pattern(S1).patt">
+        <a-entity myobject></a-entity>
+  </a-marker>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+:root{
+    --base: #D7263D;
+    --lightbase: #e7586b;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cover_all {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    background-color: var(--base);
+    border-color: var(--lightbase);
+    border-style: outset;
+    border-width: 10px;
+    background-color: var(--base);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    height: 60px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.button:hover {
+    background-color: var(--base);
+    border-color: var(--lightbase);
+    border-style: inset;
+    border-width: 10px;
+}
+
+.title {
+    color: var(--base);
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--black);
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: initial;
+}
+
+.date{
+    color: var(--black);
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: initial;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome.hidden {
+    display: none;
+}
+
+#app {
+    text-align: center;
+    overflow: hidden;
+}
