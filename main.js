@@ -16,7 +16,7 @@ window.onload = function () {
 let containers = {};
 
 const models = {
-	47: { file: 'Zainetto_Sara.glb', scale:.9}
+	47: { file: 'Zainetto_Sara.glb', scale:.09}
 };
 
 const loader = new GLTFLoader();
